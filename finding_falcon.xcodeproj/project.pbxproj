@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29936D069C20DCCB0FE14CFA /* Pods_finding_falcon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847724BEE38C9148856E03D7 /* Pods_finding_falcon.framework */; };
 		843AC747288177E700E3BEEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843AC746288177E700E3BEEF /* AppDelegate.swift */; };
 		843AC749288177E700E3BEEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843AC748288177E700E3BEEF /* SceneDelegate.swift */; };
 		843AC74B288177E700E3BEEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843AC74A288177E700E3BEEF /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		129068D07D4DEAB5524D4A54 /* Pods-finding_falcon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-finding_falcon.release.xcconfig"; path = "Target Support Files/Pods-finding_falcon/Pods-finding_falcon.release.xcconfig"; sourceTree = "<group>"; };
 		843AC743288177E700E3BEEF /* finding_falcon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = finding_falcon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		843AC746288177E700E3BEEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		843AC748288177E700E3BEEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +38,8 @@
 		843AC7642881869D00E3BEEF /* SelectionCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectionCVC.xib; sourceTree = "<group>"; };
 		843AC767288193FE00E3BEEF /* PlanetsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsTVC.swift; sourceTree = "<group>"; };
 		843AC768288193FE00E3BEEF /* PlanetsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanetsTVC.xib; sourceTree = "<group>"; };
+		847724BEE38C9148856E03D7 /* Pods_finding_falcon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_finding_falcon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD246CC5742376250FDD1C47 /* Pods-finding_falcon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-finding_falcon.debug.xcconfig"; path = "Target Support Files/Pods-finding_falcon/Pods-finding_falcon.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +47,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29936D069C20DCCB0FE14CFA /* Pods_finding_falcon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65A47D3CC54C6250E7D61B7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				847724BEE38C9148856E03D7 /* Pods_finding_falcon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		843AC73A288177E700E3BEEF = {
 			isa = PBXGroup;
 			children = (
 				843AC745288177E700E3BEEF /* finding_falcon */,
 				843AC744288177E700E3BEEF /* Products */,
+				C0BCEB293D685990F2EF0D18 /* Pods */,
+				65A47D3CC54C6250E7D61B7C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +132,16 @@
 			path = XIBs;
 			sourceTree = "<group>";
 		};
+		C0BCEB293D685990F2EF0D18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD246CC5742376250FDD1C47 /* Pods-finding_falcon.debug.xcconfig */,
+				129068D07D4DEAB5524D4A54 /* Pods-finding_falcon.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -124,9 +149,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 843AC757288177ED00E3BEEF /* Build configuration list for PBXNativeTarget "finding_falcon" */;
 			buildPhases = (
+				F306D0589E61DFAF0FC1D6FD /* [CP] Check Pods Manifest.lock */,
 				843AC73F288177E700E3BEEF /* Sources */,
 				843AC740288177E700E3BEEF /* Frameworks */,
 				843AC741288177E700E3BEEF /* Resources */,
+				A13E75FFFA4D27E8660E4D35 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -184,6 +211,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A13E75FFFA4D27E8660E4D35 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-finding_falcon/Pods-finding_falcon-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-finding_falcon/Pods-finding_falcon-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-finding_falcon/Pods-finding_falcon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F306D0589E61DFAF0FC1D6FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-finding_falcon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		843AC73F288177E700E3BEEF /* Sources */ = {
@@ -338,6 +407,7 @@
 		};
 		843AC758288177ED00E3BEEF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD246CC5742376250FDD1C47 /* Pods-finding_falcon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -366,6 +436,7 @@
 		};
 		843AC759288177ED00E3BEEF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 129068D07D4DEAB5524D4A54 /* Pods-finding_falcon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

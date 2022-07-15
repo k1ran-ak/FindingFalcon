@@ -1,0 +1,6 @@
+framework module Pods_finding_falcon {
+  umbrella header "Pods-finding_falcon-umbrella.h"
+
+  export *
+  module * { export * }
+}
