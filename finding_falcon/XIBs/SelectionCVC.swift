@@ -28,6 +28,7 @@ class SelectionCVC: UICollectionViewCell ,UITableViewDelegate, UITableViewDataSo
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.planetsSearchBar.delegate = self
     }
     
     func initRadioButtons() {
