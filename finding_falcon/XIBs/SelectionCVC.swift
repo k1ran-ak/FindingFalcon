@@ -28,12 +28,6 @@ class SelectionCVC: UICollectionViewCell ,UITableViewDelegate, UITableViewDataSo
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-        initRadioButtons()
-        self.planetsTV.isHidden = true
-        self.planetsTV.delegate = self
-        self.planetsTV.dataSource = self
-        self.planetsTV.register(UINib(nibName: "PlanetsTVC", bundle: nil), forCellReuseIdentifier: "PlanetsTVC")
     }
     
     func initRadioButtons() {
@@ -50,8 +44,14 @@ class SelectionCVC: UICollectionViewCell ,UITableViewDelegate, UITableViewDataSo
     
     
     
-    func configureCell(planets : Planets) {
+    func configureCell(planets : Planets, vehicles : Vehicles) {
         list = planets
+        vehicleList = vehicles
+        initRadioButtons()
+        self.planetsTV.isHidden = true
+        self.planetsTV.delegate = self
+        self.planetsTV.dataSource = self
+        self.planetsTV.register(UINib(nibName: "PlanetsTVC", bundle: nil), forCellReuseIdentifier: "PlanetsTVC")
     }
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
             print("Search for: ",searchText)

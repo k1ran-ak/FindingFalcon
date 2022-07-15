@@ -27,6 +27,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Reset"/>
+                                        <connections>
+                                            <action selector="resetActn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qo0-xC-cSu"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Finding Falcone!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDa-LF-1yY">
                                         <rect key="frame" x="126" y="181" width="162.5" height="25"/>
@@ -73,6 +76,9 @@
                                         <rect key="frame" x="156" y="737" width="102" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Find Falcon!"/>
+                                        <connections>
+                                            <action selector="findFalconActn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kRc-Mu-GVd"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -104,6 +110,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vel-ZK-eVg" secondAttribute="bottom" id="vIr-Os-hvd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="PlanetsCVC" destination="s1m-ym-3UB" id="bvo-D4-raO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

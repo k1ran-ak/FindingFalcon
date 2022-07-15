@@ -20,6 +20,7 @@
 		843AC7662881869D00E3BEEF /* SelectionCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843AC7642881869D00E3BEEF /* SelectionCVC.xib */; };
 		843AC769288193FE00E3BEEF /* PlanetsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843AC767288193FE00E3BEEF /* PlanetsTVC.swift */; };
 		843AC76A288193FE00E3BEEF /* PlanetsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843AC768288193FE00E3BEEF /* PlanetsTVC.xib */; };
+		843AC76C28819EAC00E3BEEF /* MissionResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843AC76B28819EAC00E3BEEF /* MissionResultVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		843AC7642881869D00E3BEEF /* SelectionCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectionCVC.xib; sourceTree = "<group>"; };
 		843AC767288193FE00E3BEEF /* PlanetsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsTVC.swift; sourceTree = "<group>"; };
 		843AC768288193FE00E3BEEF /* PlanetsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanetsTVC.xib; sourceTree = "<group>"; };
+		843AC76B28819EAC00E3BEEF /* MissionResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionResultVC.swift; sourceTree = "<group>"; };
 		847724BEE38C9148856E03D7 /* Pods_finding_falcon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_finding_falcon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD246CC5742376250FDD1C47 /* Pods-finding_falcon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-finding_falcon.debug.xcconfig"; path = "Target Support Files/Pods-finding_falcon/Pods-finding_falcon.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				843AC74A288177E700E3BEEF /* ViewController.swift */,
+				843AC76B28819EAC00E3BEEF /* MissionResultVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -138,7 +141,6 @@
 				FD246CC5742376250FDD1C47 /* Pods-finding_falcon.debug.xcconfig */,
 				129068D07D4DEAB5524D4A54 /* Pods-finding_falcon.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -261,6 +263,7 @@
 			files = (
 				843AC75F2881799800E3BEEF /* Vehilces.swift in Sources */,
 				843AC7652881869D00E3BEEF /* SelectionCVC.swift in Sources */,
+				843AC76C28819EAC00E3BEEF /* MissionResultVC.swift in Sources */,
 				843AC76128817DF200E3BEEF /* Planets.swift in Sources */,
 				843AC74B288177E700E3BEEF /* ViewController.swift in Sources */,
 				843AC769288193FE00E3BEEF /* PlanetsTVC.swift in Sources */,
