@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="433" height="500"/>
                         <subviews>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="zdW-5w-46s">
-                                <rect key="frame" x="10" y="20" width="413" height="50"/>
+                                <rect key="frame" x="84" y="20" width="339" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Web-Om-sov"/>
                                 </constraints>
@@ -33,9 +33,6 @@
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="FUP-YT-1dC">
                                         <rect key="frame" x="0.0" y="0.0" width="413" height="150"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="150" id="Qg6-lu-WBv"/>
-                                        </constraints>
                                     </tableView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gEz-pi-xSv">
                                         <rect key="frame" x="0.0" y="170" width="413" height="220"/>
@@ -43,25 +40,37 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="lop-8Q-fkN">
                                                 <rect key="frame" x="10" y="0.0" width="393" height="220"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ke3-vb-vez" customClass="RadioButton" customModule="finding_falcon" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="117.5" height="55"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ke3-vb-vez">
+                                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="55"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Radio Button 1"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Space pod"/>
+                                                        <connections>
+                                                            <action selector="tapAction1:" destination="gTV-IL-0wX" eventType="touchUpInside" id="uNs-Ul-oyv"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZL-2t-3nu" customClass="RadioButton" customModule="finding_falcon" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="55" width="119.5" height="55"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZL-2t-3nu">
+                                                        <rect key="frame" x="0.0" y="55" width="109" height="55"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Radio Button 2"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Space rocket"/>
+                                                        <connections>
+                                                            <action selector="tapAction2:" destination="gTV-IL-0wX" eventType="touchUpInside" id="tq9-dc-XfL"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uf-Tr-oa7" customClass="RadioButton" customModule="finding_falcon" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="110" width="120" height="55"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uf-Tr-oa7">
+                                                        <rect key="frame" x="0.0" y="110" width="112.5" height="55"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Radio Button 3"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Space shuttle"/>
+                                                        <connections>
+                                                            <action selector="tapAction3:" destination="gTV-IL-0wX" eventType="touchUpInside" id="iig-86-HnK"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIk-kH-UnX" customClass="RadioButton" customModule="finding_falcon" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="165" width="120" height="55"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIk-kH-UnX">
+                                                        <rect key="frame" x="0.0" y="165" width="95.5" height="55"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Radio Button 4"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Space ship"/>
+                                                        <connections>
+                                                            <action selector="tapAction4:" destination="gTV-IL-0wX" eventType="touchUpInside" id="QMe-Se-qJU"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -82,15 +91,24 @@
                                     <constraint firstItem="gEz-pi-xSv" firstAttribute="leading" secondItem="dlH-Aj-3kY" secondAttribute="leading" id="qJj-AF-wJ5"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Planet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzk-6Z-63X">
+                                <rect key="frame" x="10" y="20" width="64" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="zdW-5w-46s" firstAttribute="top" secondItem="2xW-EV-aa8" secondAttribute="top" constant="20" id="15a-5U-aNy"/>
+                            <constraint firstItem="dlH-Aj-3kY" firstAttribute="top" secondItem="wzk-6Z-63X" secondAttribute="bottom" constant="20" id="Eoj-f8-K8y"/>
                             <constraint firstItem="dlH-Aj-3kY" firstAttribute="top" secondItem="zdW-5w-46s" secondAttribute="bottom" constant="20" id="Fvq-vF-OaE"/>
                             <constraint firstItem="dlH-Aj-3kY" firstAttribute="leading" secondItem="2xW-EV-aa8" secondAttribute="leading" constant="10" id="UvW-Wy-hEg"/>
+                            <constraint firstItem="wzk-6Z-63X" firstAttribute="leading" secondItem="2xW-EV-aa8" secondAttribute="leading" constant="10" id="ZJY-d8-DGS"/>
+                            <constraint firstItem="wzk-6Z-63X" firstAttribute="top" secondItem="2xW-EV-aa8" secondAttribute="top" constant="20" id="fVs-3z-cEK"/>
                             <constraint firstAttribute="trailing" secondItem="dlH-Aj-3kY" secondAttribute="trailing" constant="10" id="gm1-Dk-PZy"/>
+                            <constraint firstItem="zdW-5w-46s" firstAttribute="leading" secondItem="wzk-6Z-63X" secondAttribute="trailing" constant="10" id="hsh-OR-t1k"/>
                             <constraint firstAttribute="bottom" secondItem="dlH-Aj-3kY" secondAttribute="bottom" constant="20" id="iAM-FW-06z"/>
-                            <constraint firstItem="zdW-5w-46s" firstAttribute="leading" secondItem="2xW-EV-aa8" secondAttribute="leading" constant="10" id="noX-Zv-j6o"/>
                             <constraint firstAttribute="trailing" secondItem="zdW-5w-46s" secondAttribute="trailing" constant="10" id="rtK-ds-gi3"/>
                         </constraints>
                     </view>
@@ -105,6 +123,7 @@
             </constraints>
             <size key="customSize" width="433" height="494"/>
             <connections>
+                <outlet property="planetTitleLbl" destination="wzk-6Z-63X" id="nAM-oS-qTI"/>
                 <outlet property="planetsSearchBar" destination="zdW-5w-46s" id="5uc-OY-S00"/>
                 <outlet property="planetsTV" destination="FUP-YT-1dC" id="LTS-jM-Nfi"/>
                 <outlet property="radioButton1" destination="ke3-vb-vez" id="mHN-Qc-qwf"/>
